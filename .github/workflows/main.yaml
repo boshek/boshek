@@ -17,4 +17,8 @@ jobs:
       - uses: boshek/metrics@master
         with:
           token: ${{ secrets.NEW_METRICS_TOKEN }}
-                  
+          
+          user: boshek
+          plugin_posts: true
+          plugin_posts_source: https://samalbers.science/
+
