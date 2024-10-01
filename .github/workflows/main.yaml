@@ -19,6 +19,6 @@ jobs:
           token: ${{ secrets.NEW_METRICS_TOKEN }}
           
           user: boshek
-          plugin_posts: true
+          plugin_posts: yes
           plugin_posts_source: https://samalbers.science/
 
