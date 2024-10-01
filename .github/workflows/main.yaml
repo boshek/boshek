@@ -16,7 +16,18 @@ jobs:
           token: ${{ secrets.NEW_METRICS_TOKEN }}
           
           user: boshek
-          plugin_activity: yes
-          plugin_languages: yes
-          plugin_topics: yes
+          plugin_habits: yes
+          plugin_habits_from: 250
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
 
+      - name: New posts from samalbers.science
+        uses: boshek/metrics@master
+        with:
+          filename: metrics.plugin.rss.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_rss: yes
+          plugin_rss_source: https://samalbers.science/rss
+          plugin_rss_limit: 4
